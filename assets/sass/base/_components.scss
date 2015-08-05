@@ -6,17 +6,18 @@
 		font-size: 30px;
 		font-family: $roboto-bold;
 		color: $green;
+		margin: 0 5px 0;
 	}
 	.logo:first-letter{
 		background-color: $grey;
 		color: $white;
 		padding: 6px 15px;
 		margin-right: 5px;
+		margin: 0 5px 0 0;
 	}
 	.navbar{
 		text-align: right;
-		padding: 15px 0;
-		
+		padding: 15px 0;		
 		li{
 			display: inline;
 			padding: 0 15px;
@@ -38,12 +39,43 @@
 .about-me {
   background: #FCFAF4 url("../../assets/images/profile.jpg") no-repeat scroll -140px 0;
   display: block;
-  height: 610px;
+  height: 570px;
+  h2{
+  	font-size: 47px;
+  }
 }
+//Skills
+.stacks{
+	list-style: outside none none;
+	h4{
+		color: $text-heading;
+	}
+}
+//Experience
+.experience-col{
+	border-left: 1px solid #ccc;
+	.company-logo {
+	  float: left;
+	  padding: 0 10px;
+	}
+}
+
 .footer{
 	background-color: #252e30;
-	height: 100px;
+	bottom: 0;
+	clear: both;
+	float: left;
+	height: 50px;
+	opacity: 0.9;
+	position: fixed;
 	text-transform: uppercase;
-	padding-top:20px;
+	width: 100%;
+	.social {
+	  list-style: outside none none;
+	  text-align: center;
+	  li {
+		display: inline;
+	  }
+	}
 }
 

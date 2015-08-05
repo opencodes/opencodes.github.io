@@ -1,0 +1,22 @@
+<section class="skills">
+	<div class="content" >
+		<div class="col-6">
+			<h2 class="">{{page.title}}</h2>
+			<p>{{page.content}}</p>
+		</div>
+		<div class="col-6">
+			<div class="row">
+				<article class="col-6" ng-repeat="category in page.skills">
+				<h3>{{category.category}}</h3>
+				<ul class="stacks">
+					<li ng-repeat="skill in category.stacks">
+						<h4>{{skill.title}}</h4>
+						<p class="range"> <span class="pointer" ng-style="{'width': skill.experties*10 + '%'}">{{skill.experties}}/10</span></p>
+					</li>
+				</ul>
+				</article>
+			</div>
+		</div>
+	</div>
+	
+</section>

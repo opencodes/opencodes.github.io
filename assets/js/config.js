@@ -12,7 +12,8 @@ requirejs.config({
 		app : './assets/js/app',
    		mainController : './assets/js/modules/comman/controller',
         mainRoutes : './assets/js/modules/comman/routes',
-        mainService : './assets/js/modules/comman/service'	
+        mainService : './assets/js/modules/comman/service',
+        skillCtrl : './assets/js/modules/comman/skillcontroller'	
     },
 	shim: {
         'angular': {
@@ -25,8 +26,9 @@ requirejs.config({
 			deps : ['angular']
 		}
      },
-	deps: [ 'angular','modernizr', 'uiRouter', 'app'],
+	deps: ['angular', 'app'],
     callback: function(angular) {
+    	
         angular.bootstrap(document.getElementsByTagName('body'), ['myApp']);
     }
 });

@@ -19,7 +19,7 @@
     "tests"
   ],
   "dependencies": {
-    "fontawesome": "~4.3.0",
+    "fontawesome": "~4.4.0",
     "angular": "~1.4.3",
     "angular-ui-router": "~0.2.13",
     "lodash": "~3.5.0",

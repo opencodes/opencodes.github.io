@@ -1,0 +1,18 @@
+<section class="skills">
+	<div class="content" >
+		<div class="col-6">
+			<h2 class="">{{page.title}}</h2>
+			<p>{{page.content}}</p>
+		</div>
+		<div class="col-6">			
+				<article  ng-repeat="education in page.education">
+						<h3>{{education.qualification}}</h3>
+						<p>{{education.from}} / {{education.year}} - {{education.location}}</p>
+						<p> <span class="labels">{{education.percentage}}</span></p>
+						<hr/>
+						<p>{{education.content}}</p>					
+				</article>			
+		</div>
+	</div>
+	
+</section>

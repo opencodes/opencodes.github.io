@@ -18,7 +18,7 @@ gulp.task('css', function() {
         .pipe(sass({
             style: 'compressed',
             loadPath: [
-                './assets/sass'
+                './assets/sass',
             ]
         })
 		.on("error", notify.onError(function (error) {

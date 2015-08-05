@@ -1,3 +1,7 @@
+//Font awesome
+$fa-font-path: "../../bower_components/fontawesome/fonts";
+@import '../../bower_components/fontawesome/scss/font-awesome';
+
 //Variable and colors
 @import 'var';
 @import 'color';
@@ -6,3 +10,4 @@
 @import 'base/grid';
 @import 'base/typography';
 @import 'base/components';
+
