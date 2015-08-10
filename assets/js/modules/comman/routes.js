@@ -8,33 +8,33 @@ define(function(){
 	  .state('home', {
 		  url: "/",
 		  templateUrl: "./assets/js/modules/comman/tpl/home.html",
-		  controller: 'mainCtrl',
+		  controller: 'MainController',
 		  
 		 })
 	  .state('skills', {
 		  url: "/skills",
 		  templateUrl: "./assets/js/modules/comman/tpl/skills.html",
-		  controller: 'mainCtrl'
+		  controller: 'MainController'
 	   })
 	  .state('resume', {
 		  url: "/resume",
 		  templateUrl: "./assets/js/modules/comman/tpl/resume.html",
-		  controller: 'mainCtrl'
+		  controller: 'MainController'
 	   })
 	  .state('education', {
 		  url: "/education",
 		  templateUrl: "./assets/js/modules/comman/tpl/education.html",
-		  controller: 'mainCtrl'
+		  controller: 'MainController'
 	   })
 	  .state('experience', {
 		  url: "/experience",
 		  templateUrl: "./assets/js/modules/comman/tpl/experience.html",
-		  controller: 'mainCtrl'
+		  controller: 'MainController'
 	   })
-	  .state('portfolio', {
-		  url: "/portfolio",
-		  templateUrl: "./assets/js/modules/comman/tpl/portfolio.html",
-		  controller: 'mainCtrl'
+	  .state('projects', {
+		  url: "/projects",
+		  templateUrl: "./assets/js/modules/comman/tpl/projects.html",
+		  controller: 'MainController'
 	   })
 	  
 	}

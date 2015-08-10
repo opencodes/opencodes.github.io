@@ -24,7 +24,7 @@ gulp.task('css', function() {
 		.on("error", notify.onError(function (error) {
 			return "Error: " + error.message;
 		})))
-        .pipe(gulp.dest('./public/css'));
+        .pipe(gulp.dest('./assets/css'));
 });
 gulp.task('js', function() {
   gulp.src([config.jsPath+'/**/*.js'])
@@ -35,7 +35,7 @@ gulp.task('js', function() {
         beautify: true
       }
     }))
-    .pipe(gulp.dest('./public/js'));
+    .pipe(gulp.dest('./assets/js'));
 });
 gulp.task('default', ['sass', 'watch', 'js']);
 

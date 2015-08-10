@@ -146,8 +146,8 @@
          "experience" : [{
             "position" : "Senior Interactive Developer",
             "company" : "Sapient Corporation",
-            "logo" : "assets/images/logo/sapient-nitro.jpg",
-            "role" : "",
+            "logo" : "assets/images/logo/sapient-nitro.png",
+            "role" : "Involved in world most popular UK and US based e-commerce website front-end development using Demandware scripts as well as JavaScript, jQuery, CSS and HTML. Involved in develop webpages from given design use cases required for each release Involved in develop webpages for mobile or desktop responsive depends on client requirement. Involved in develop webpages with browser compatibility.",
             "from" : "Mar 2013",
             "to" : "Aug 2015",
             "period" : "2 Year 5 Month",
@@ -185,85 +185,71 @@
             }]
       },
       {
-         "title":"Portfolio",
-         "href":"portfolio",
+         "title":"Projects",
+         "href":"projects",
          "content":"I have experties on various web technologies.",
-         "portfolio" : [{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            },{
-            "image" : "assets/images/logo/logo.jpg",
-            "title" : "Title",
-            "url" :"./",
-            "description" : "Description"
-            }]
+         "projects" : {"sapient":[{
+               "image" : "assets/images/portfolio/kuoni_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/jato_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/staples_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/coach_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/diesel_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/johndeere_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/tiffany_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               }]
+            ,
+            "urbantouch":[{
+               "image" : "assets/images/portfolio/urbantouch_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               }],
+            "componence":[{
+               "image" : "assets/images/portfolio/papergoods_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/yaysave_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/watterbobble_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+            }]}
+
+
       }
+         
    ]
 }

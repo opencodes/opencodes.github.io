@@ -1,0 +1,13 @@
+<section >
+	<div class="content" >
+		<div class="row " ng-repeat="(key, items) in page.projects">
+			<h2>{{key}} :- </h2>
+			<hr/>
+			<div class="col-3 portfolio-items" ng-repeat="item in items">
+				<a href="{{item.url}}">
+				<img src="{{item.image}}" title="{{item.title}}" class="responsive-image">
+				</a>
+			</div>
+		</div>
+	</div>	
+</section>

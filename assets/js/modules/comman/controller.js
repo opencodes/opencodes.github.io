@@ -1,7 +1,9 @@
 define(function(){
-	function mainCtrl($scope, $http,$rootScope, $timeout,$state, mainService) {
+	function MainController($scope, $http,$rootScope, $timeout,$state, $templateCache, mainService) {
 		var pageName = $state.current.name;
 		$scope.page = {};
+		
+		$templateCache.removeAll();
 		
 		if(mainService.response){
 			
@@ -20,7 +22,7 @@ define(function(){
 		}		
 	}
 
-	mainCtrl.$inject=['$scope','$http','$rootScope','$timeout' , '$state','mainService'];
-	return mainCtrl;
+	MainController.$inject=['$scope','$http','$rootScope','$timeout' , '$state','$templateCache','mainService'];
+	return MainController;
 	
 });

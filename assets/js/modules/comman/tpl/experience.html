@@ -7,11 +7,16 @@
 		<div class="col-6 experience-col">			
 				<article  ng-repeat="item in page.experience" class="experience">
 						<h3>{{item.position}}</h3>
-						<p>
-							<img src="{{item.logo}}" class="company-logo" />
-							<span >{{item.company}} - {{item.from}} / {{item.to}}</span>
+						<div class="row">
+							<div class="col-6">
+								<img src="{{item.logo}}" class="company-logo" />
+							</div>
+							<div class="col-6">								
+							<p><span >{{item.company}} - {{item.from}} / {{item.to}}</span></p>
+							<span class="labels">{{item.period}}</span>
+							</div>
+							
 						</p>
-						<p><span class="labels">{{item.period}}</span></p>
 						<p>{{item.role}}</p>	
 						<hr/>							
 				</article>			
