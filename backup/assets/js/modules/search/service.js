@@ -1,3 +1,0 @@
-peopleTen.service('userService', function(){
-    
-});
