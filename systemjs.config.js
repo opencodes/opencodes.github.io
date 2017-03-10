@@ -4,6 +4,7 @@
  */
 (function (global) {
   System.config({
+    baseURL : "opencodes.github.io",
     paths: {
       // paths serve as alias
       'npm:': 'node_modules/'
