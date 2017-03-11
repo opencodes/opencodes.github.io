@@ -1,0 +1,255 @@
+{
+   "profile":{
+      "name":{
+         "firstname":"Rajesh",
+         "middlename":"Kumar",
+         "lastname":"Jha"
+      },
+      "email":"rkjha.it.in@gmail.com",
+      "phone":"7022368966",
+      "social" : [{
+            "title" : "facebook",
+            "url" : "https://www.facebook.com/rkjha.it.in"
+         },
+         {
+            "title" : "twitter",
+            "url" : "https://twitter.com/itsrkjha"
+         },
+         {
+            "title" : "linkedin",
+            "url" : "https://in.linkedin.com/in/rkjha1984"
+         },
+         {
+            "title" : "github",
+            "url" : "https://github.com/opencodes"
+         }
+      ]
+   },
+   "pages":[
+      {
+         "title":"About Me",
+         "href":"home",
+         "content":"I am a frontend developer based out of Bangalore India. I love to covert idea into a beautiful APP.",
+         "interests":[
+            {
+               "title":"Web Design",
+               "content":"Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+            },
+            {
+               "title":"Graphics Design",
+               "content":"Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+            },
+            {
+               "title":"Ecommerce",
+               "content":"Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+            },
+            {
+               "title":"Content Management",
+               "content":"Lorem ipsum dolor sit amet, ea doming until epicuri iudicabit nam, te usu virtute placerat. Purto brute disputando cu est."
+            }
+         ]
+      },
+      {
+         "title":"Skills",
+         "href":"skills",
+         "content":"I have experties on various web technologies.",
+         "tags":[
+            "Svn",
+            "Git",
+            "JIRA",
+            "PHP",
+            "MongoDb",
+            "MySQL"
+         ],
+         "skills":[
+            {
+               "category":"Javascript",
+               "stacks":[
+                  {
+                     "title":"Object Oriented JS",
+                     "experties":4
+                  },
+                  {
+                     "title":"Angular JS",
+                     "experties":3
+                  },
+                  {
+                     "title":"Node.JS",
+                     "experties":3
+                  },
+                  {
+                     "title":"Jquery",
+                     "experties":4
+                  },
+                  {
+                     "title":"Backbone JS",
+                     "experties":1
+                  }
+               ]
+            },
+            {
+               "category":"HTML/CSS",
+               "stacks":[
+                  {
+                     "title":"HTML5",
+                     "experties":3
+                  },
+                  {
+                     "title":"CSS3",
+                     "experties":3
+                  },
+                  {
+                     "title":"Photoshop",
+                     "experties":1
+                  }
+               ]
+            }
+         ]
+      },
+      {
+         "title":"Resume",
+         "href":"resume",
+         "content":"Download updated resume.",
+         "link":"./assets/resume/RESUME_Rajesh_Kumar_Jha_UI_Developer.docx"
+      },
+      {
+         "title":"Education",
+         "href":"education",
+         "content":"I have experties on various web technologies.",
+         "education" : [{
+            "qualification" : "B.E – IT",
+            "year" : "2005-09",
+            "percentage" : "67.9%",
+            "from":"Rajasthan University",
+            "location" : "Rajasthan/India",
+            "content":"Download updated resume."
+            },{
+            "qualification" : "XIIth",
+            "year" : "2001",
+            "percentage" : "71%",
+            "from":"Bihar Intermediate Education Council",
+            "location" : "Bihar/India",
+            "content":"Download updated resume."
+            },{
+            "qualification" : "Xth",
+            "year" : "1999",
+            "percentage" : "57%",
+            "from":"Bihar School Examination Board",
+            "location" : "Bihar/India",
+            "content":"Download updated resume."
+            }]
+      },
+      {
+         "title":"Work Experience",
+         "href":"experience",
+         "content":"Since 5+ year accomplished web design & front-end development with extensive experience building E-Commerce driven websites using open source and enterprise technologies, HTML5, CSS3 and various web scripting technologies, web standards and project management. Provide a diverse range of services including custom theme/application/plugin development and branding to an array of clients from a variety of industries. Enthusiastic web professional motivated by challenging projects and deadlines.",
+         "experience" : [{
+            "position" : "Senior Interactive Developer",
+            "company" : "Sapient Corporation",
+            "logo" : "assets/images/logo/sapient-nitro.png",
+            "role" : "Involved in world most popular UK and US based e-commerce website front-end development using Demandware scripts as well as JavaScript, jQuery, CSS and HTML. Involved in develop webpages from given design use cases required for each release Involved in develop webpages for mobile or desktop responsive depends on client requirement. Involved in develop webpages with browser compatibility.",
+            "from" : "Mar 2013",
+            "to" : "Aug 2015",
+            "period" : "2 Year 5 Month",
+            "type" : "Permanent"
+            },
+            {
+            "position" : "Senior Development Executive",
+            "company" : "Urbantouch (Reindeer Software Soln)",
+            "logo" : "assets/images/logo/urbantouch.jpg",
+            "role" : "",
+            "from" : "Oct 2011",
+            "to" : "Jan 2013",
+            "period" : "1 Year 3 Month",
+            "type" : "Permanent"
+            },
+            {
+            "position" : "Software Engineer",
+            "company" : "Componence Portal",
+            "logo" : "assets/images/logo/componence.png",
+            "role" : "",
+            "from" : "Sept  2010",
+            "to" : "May 2011",
+            "period" : "8 Month",
+            "type" : "Permanent"
+            },
+            {
+            "position" : "Senior Web Developer",
+            "company" : "Kulhari Technologies Pvt Ltd",
+            "logo" : "assets/images/logo/kulhari.jpg",
+            "role" : "",
+            "from" : "Sept 2009",
+            "to" : "Aug 2010",
+            "period" : "11 Month",
+            "type" : "Permanent"
+            }]
+      },
+      {
+         "title":"Projects",
+         "href":"projects",
+         "content":"I have experties on various web technologies.",
+         "projects" : {"sapient":[{
+               "image" : "assets/images/portfolio/kuoni_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/jato_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/staples_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/coach_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/diesel_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/johndeere_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/tiffany_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               }]
+            ,
+            "urbantouch":[{
+               "image" : "assets/images/portfolio/urbantouch_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               }],
+            "componence":[{
+               "image" : "assets/images/portfolio/papergoods_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/yaysave_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+               },{
+               "image" : "assets/images/portfolio/watterbobble_logo.png",
+               "title" : "Title",
+               "url" :"./",
+               "description" : "Description"
+            }]}
+
+
+      }
+         
+   ]
+}

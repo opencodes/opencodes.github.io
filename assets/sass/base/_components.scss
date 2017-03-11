@@ -1,0 +1,94 @@
+.top-nav{
+	height: 70px;
+	background-color: $dark-green;
+	text-transform: uppercase;
+	.logo{
+		font-size: 30px;
+		font-family: $roboto-bold;
+		color: $green;
+		margin: 0 5px 0;
+	}
+	.logo:first-letter{
+		background-color: $grey;
+		color: $white;
+		padding: 6px 15px;
+		margin-right: 5px;
+		margin: 0 5px 0 0;
+	}
+	.navbar{
+		text-align: right;
+		padding: 15px 0;		
+		li{
+			display: inline;
+			padding: 0 15px;
+		}
+		li:last-child {
+		    padding-right: 0;
+		}
+		a{
+			font-size: 16px;
+			color: $white;
+			font-family: $roboto-bold;
+			text-decoration: none;
+		}
+		a:hover{
+			color: $green;
+		}
+	}
+}
+.about-me {
+  background: #FCFAF4 url("../../assets/images/profile.jpg") no-repeat scroll -140px 0;
+  display: block;
+  height: 570px;
+  h2{
+  	font-size: 47px;
+  }
+}
+//Skills
+.stacks{
+	list-style: outside none none;
+	h4{
+		color: $text-heading;
+	}
+}
+//Experience
+.experience-col{
+	border-left: 1px solid #ccc;
+	.company-logo {
+	  float: left;
+	  padding: 0 10px;
+	}
+}
+//Portfolio
+.portfolio-items {
+  border: 1px solid #ddd;
+  border-collapse: collapse;
+  height: 137px;
+  text-align: center;
+  img {
+	  position: relative;
+	  text-align: center;
+	  top: 50%;
+	  transform: translateY(-50%);
+	}
+}
+
+.footer{
+	background-color: #252e30;
+	bottom: 0;
+	clear: both;
+	float: left;
+	height: 50px;
+	opacity: 0.9;
+	position: fixed;
+	text-transform: uppercase;
+	width: 100%;
+	.social {
+	  list-style: outside none none;
+	  text-align: center;
+	  li {
+		display: inline;
+	  }
+	}
+}
+

@@ -1,0 +1,26 @@
+<section class="skills">
+	<div class="content" >
+		<div class="col-6">
+			<h2 class="">{{page.title}}</h2>
+			<p>{{page.content}}</p>
+		</div>
+		<div class="col-6 experience-col">			
+				<article  ng-repeat="item in page.experience" class="experience">
+						<h3>{{item.position}}</h3>
+						<div class="row">
+							<div class="col-6">
+								<img src="{{item.logo}}" class="company-logo" />
+							</div>
+							<div class="col-6">								
+							<p><span >{{item.company}} - {{item.from}} / {{item.to}}</span></p>
+							<span class="labels">{{item.period}}</span>
+							</div>
+							
+						</p>
+						<p>{{item.role}}</p>	
+						<hr/>							
+				</article>			
+		</div>
+	</div>
+	
+</section>

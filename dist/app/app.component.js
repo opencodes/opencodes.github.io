@@ -8,19 +8,39 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
-var core_1 = require('@angular/core');
+Object.defineProperty(exports, "__esModule", { value: true });
+var core_1 = require("@angular/core");
+var page_service_1 = require("./common/service/page.service");
+var profile_service_1 = require("./profile/service/profile.service");
 var AppComponent = (function () {
-    function AppComponent() {
-        this.name = 'Angular';
+    function AppComponent(_pageService, _profileService) {
+        this._pageService = _pageService;
+        this._profileService = _profileService;
+        this.title = 'Tour of Heroes';
+        this.name = 'Rajesh';
     }
-    AppComponent = __decorate([
-        core_1.Component({
-            selector: 'my-app',
-            template: "<h1>Hello {{name}}</h1>",
-        }), 
-        __metadata('design:paramtypes', [])
-    ], AppComponent);
+    AppComponent.prototype.getNavigations = function () {
+        var _this = this;
+        this._pageService.getTopNav().then(function (nav) { return _this.topnav = nav; });
+    };
+    AppComponent.prototype.getProfile = function () {
+        var _this = this;
+        this._profileService.getProfile().then(function (profile) { return _this.profiledetails = profile; });
+    };
+    AppComponent.prototype.ngOnInit = function () {
+        this.getNavigations();
+        this.getProfile();
+        console.log(this.topnav, this.profiledetails);
+    };
     return AppComponent;
 }());
+AppComponent = __decorate([
+    core_1.Component({
+        selector: 'my-app',
+        templateUrl: './app/app.html',
+        providers: [page_service_1.PageService, profile_service_1.ProfileService]
+    }),
+    __metadata("design:paramtypes", [page_service_1.PageService, profile_service_1.ProfileService])
+], AppComponent);
 exports.AppComponent = AppComponent;
 //# sourceMappingURL=app.component.js.map

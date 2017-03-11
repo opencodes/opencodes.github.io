@@ -1,0 +1,24 @@
+{
+  "name": "Opencodes",
+  "version": "0.0.0",
+  "authors": [
+    "Rajesh Kumar Jha <rkjha.it.in@gmail.com>"
+  ],
+  "description": "My personal web page",
+  "main": "app.js",
+  "keywords": [
+    "rajesh, interactive"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "fontawesome": "~4.4.0"    
+  }
+}

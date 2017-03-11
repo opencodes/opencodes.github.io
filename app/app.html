@@ -1,0 +1,17 @@
+<!-- Fixed navbar -->
+<nav class="top-nav">
+    <div class="content row">
+        <div class=" col-2">
+            <h1 class="logo">{{name}}</h1></div>
+        <div class="top-right col-10">
+            <ul class="navbar">
+                <li *ngFor="let nav of topnav"><a routerLink="/{{nav.href}}">{{nav.title}}</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<div class="container" id="app">
+    <router-outlet></router-outlet>
+    <!-- Routed views go here -->
+</div>
+<!-- /.container -->
