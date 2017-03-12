@@ -3,7 +3,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.PROJECT = {
     "title": "Projects",
     "content": "I have experties on various web technologies.",
-    "companies": [
+    "companies": [{
+            "name": "persistent",
+            "projects": [{
+                    "image": "assets/images/portfolio/urbantouch_logo.png",
+                    "title": "CIAP (Citibank Infrastructure Application Portal)",
+                    "url": "./",
+                    "description": "The purpose of CIAP Web Project is to create a Single Page Application to provide Interface to manage Linux/Windows server administration for internal use."
+                }]
+        },
         {
             "name": "sapient",
             "projects": [{
@@ -69,7 +77,6 @@ exports.PROJECT = {
                     "url": "./",
                     "description": "Description"
                 }]
-        }
-    ]
+        }]
 };
 //# sourceMappingURL=project.moc.data.js.map

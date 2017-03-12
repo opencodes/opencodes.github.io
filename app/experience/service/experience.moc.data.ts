@@ -4,6 +4,15 @@ export const EXPERIENCE : Experience= {
          "title":"Work Experience",
          "content":"Since 5+ year accomplished web design & front-end development with extensive experience building E-Commerce driven websites using open source and enterprise technologies, HTML5, CSS3 and various web scripting technologies, web standards and project management. Provide a diverse range of services including custom theme/application/plugin development and branding to an array of clients from a variety of industries. Enthusiastic web professional motivated by challenging projects and deadlines.",
          "experience" : [{
+            "position" : "Module Lead UI",
+            "company" : "Persistent System Ltd",
+            "logo" : "assets/images/logo/persistent-dark-logo.png",
+            "role" : "Involved in world most popular UK and US based e-commerce website front-end development using Demandware scripts as well as JavaScript, jQuery, CSS and HTML. Involved in develop webpages from given design use cases required for each release Involved in develop webpages for mobile or desktop responsive depends on client requirement. Involved in develop webpages with browser compatibility.",
+            "from" : "Sep 2015",
+            "to" : "Current",
+            "period" : "1 Year 6 Month",
+            "type" : "Permanent"
+            },{
             "position" : "Senior Interactive Developer",
             "company" : "Sapient Corporation",
             "logo" : "assets/images/logo/sapient-nitro.png",

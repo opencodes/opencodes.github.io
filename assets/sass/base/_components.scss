@@ -6,7 +6,11 @@
 		font-size: 30px;
 		font-family: $roboto-bold;
 		color: $green;
-		margin: 0 5px 0;
+		margin: 8px 5px 0;
+		a{
+			text-decoration: none;
+			color: inherit;
+		}
 	}
 	.logo:first-letter{
 		background-color: $grey;

@@ -1,6 +1,6 @@
 import { RouterModule, Routes } from '@angular/router';
 
-import { AppComponent }  from './main.component';
+import { AppComponent }  from './app.component';
 import { ProfileComponent }  from './profile/components/profile.component';
 import { PageNotFoundComponent }  from './common/components/page.not.found.component';
 import { EducationComponent }  from './education/components/education.component';
