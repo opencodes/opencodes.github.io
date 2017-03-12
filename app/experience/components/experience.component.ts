@@ -1,6 +1,7 @@
 import {Component} from '@angular/core';
 
 import {ExperienceService} from '../service/experience.service';
+import {Experience} from '../service/experience';
 
 @Component({
     templateUrl : "./app/experience/html/experience.html",
@@ -11,7 +12,12 @@ export class ExperienceComponent{
     constructor(private _experienceService:ExperienceService){
         
     }
-    title = "Experience";
-   
+    data:Experience;
+    getExperienceDetails():void{
+        this.data = this._experienceService.getExperience();
+    }  
+    ngOnInit(){
+        this.getExperienceDetails();
+    }
 }
 

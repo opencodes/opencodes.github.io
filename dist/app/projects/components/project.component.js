@@ -14,8 +14,13 @@ var project_service_1 = require("../service/project.service");
 var ProjectComponent = (function () {
     function ProjectComponent(_projectService) {
         this._projectService = _projectService;
-        this.title = "Project";
     }
+    ProjectComponent.prototype.getProjectDetails = function () {
+        this.data = this._projectService.getProject();
+    };
+    ProjectComponent.prototype.ngOnInit = function () {
+        this.getProjectDetails();
+    };
     return ProjectComponent;
 }());
 ProjectComponent = __decorate([

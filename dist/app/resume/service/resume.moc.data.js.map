@@ -1,1 +1,1 @@
-{"version":3,"file":"resume.moc.data.js","sourceRoot":"","sources":["../../../../app/resume/service/resume.moc.data.ts"],"names":[],"mappings":";;AAEa,QAAA,MAAM,GAAc,CAAC;QAC7B,OAAO,EAAC,WAAW;QACnB,SAAS,EAAC,+CAA+C;KAE3D,CAAC,CAAA"}
+{"version":3,"file":"resume.moc.data.js","sourceRoot":"","sources":["../../../../app/resume/service/resume.moc.data.ts"],"names":[],"mappings":";;AAEa,QAAA,MAAM,GAAW;IAC5B,OAAO,EAAE,QAAQ;IACjB,MAAM,EAAE,QAAQ;IAChB,SAAS,EAAE,0BAA0B;IACrC,MAAM,EAAE,2DAA2D;CACpE,CAAA"}

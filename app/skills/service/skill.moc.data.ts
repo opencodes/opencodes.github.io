@@ -1,6 +1,6 @@
-import {Skill} from './skill';
+import {RootObject} from './skill';
 
-export const SKILL : Skill[] = [{
+export const SKILL:RootObject  = {
          "title":"Skills",
          "content":"I have experties on various web technologies.",
          "tags":[
@@ -55,4 +55,4 @@ export const SKILL : Skill[] = [{
                ]
             }
          ]
-      }]
+      }

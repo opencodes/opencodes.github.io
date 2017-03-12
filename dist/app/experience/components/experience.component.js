@@ -14,8 +14,13 @@ var experience_service_1 = require("../service/experience.service");
 var ExperienceComponent = (function () {
     function ExperienceComponent(_experienceService) {
         this._experienceService = _experienceService;
-        this.title = "Experience";
     }
+    ExperienceComponent.prototype.getExperienceDetails = function () {
+        this.data = this._experienceService.getExperience();
+    };
+    ExperienceComponent.prototype.ngOnInit = function () {
+        this.getExperienceDetails();
+    };
     return ExperienceComponent;
 }());
 ExperienceComponent = __decorate([

@@ -4,7 +4,7 @@ import { EDUCATION } from './education.moc.data';
 
 @Injectable()
 export class EducationService{
-    getEducationDetails(): Education[] {
+    getEducationDetails(): Education {
         return EDUCATION;
     }
 }

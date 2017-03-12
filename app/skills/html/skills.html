@@ -1,17 +1,21 @@
 <section class="skills">
-    <div class="content">
-        <div class="col-6">
-            <img src="assets/images/logo/logo.jpg" width="200" />
-            <h2>{{profile.fullname}}</h2>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> {{profile.email}}</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> {{profile.phone}}</p>
-        </div>
-        <div class="col-6">
-            <div class="row">
-                <article class="col-6">
-
-                </article>
-            </div>
-        </div>
-    </div>
+	<div class="content" >
+		<div class="col-6">
+			<h2 class="">{{data.title}}</h2>
+			<p>{{data.content}}</p>
+		</div>
+		<div class="col-6">
+			<div class="row">
+				<article class="col-6" *ngFor="let skill of data.skills">
+				<h3>{{skill.category}}</h3>
+				<ul class="stacks">
+					<li *ngFor="let stack of skill.stacks">
+						<h4>{{stack.title}}</h4>
+						<p class="range"> <span class="pointer" ng-style="{'width': skill.experties*10 + '%'}">{{stack.experties}}/10</span></p>
+					</li>
+				</ul>
+				</article>
+			</div>
+		</div>
+	</div>	
 </section>

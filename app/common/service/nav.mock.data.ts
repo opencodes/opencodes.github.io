@@ -3,7 +3,7 @@ import {Nav} from './nav';
 export const NAV : Nav[] = [
         {
             "title": "About Me",
-            "href": "home",
+            "href": "",
         }, {
             "title": "Skills",
             "href": "skills",
@@ -18,7 +18,7 @@ export const NAV : Nav[] = [
             "href": "experience",
         }, {
             "title": "Projects",
-            "href": "projects",
+            "href": "project",
         }, {
             "title": "Fun",
             "href": "fun",

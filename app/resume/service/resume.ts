@@ -1,4 +1,6 @@
-export interface Resume{
-    title : string,
-    content : string,
+export interface Resume {
+    title: string;
+    href: string;
+    content: string;
+    link: string;
 }

@@ -14,8 +14,13 @@ var education_service_1 = require("../service/education.service");
 var EducationComponent = (function () {
     function EducationComponent(_educationService) {
         this._educationService = _educationService;
-        this.title = "Education";
     }
+    EducationComponent.prototype.getEducationDetails = function () {
+        this.data = this._educationService.getEducationDetails();
+    };
+    EducationComponent.prototype.ngOnInit = function () {
+        this.getEducationDetails();
+    };
     return EducationComponent;
 }());
 EducationComponent = __decorate([

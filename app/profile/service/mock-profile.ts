@@ -1,6 +1,6 @@
 import {Profile} from './profile';
 
-export const PROFILE : Profile[] = [{"name":{
+export const PROFILE  = {"name":{
          "firstname":"Rajesh",
          "middlename":"Kumar",
          "lastname":"Jha"
@@ -24,4 +24,4 @@ export const PROFILE : Profile[] = [{"name":{
             "url" : "https://github.com/opencodes"
          }
       ]
-  }]
+  }

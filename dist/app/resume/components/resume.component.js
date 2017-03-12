@@ -14,8 +14,13 @@ var resume_service_1 = require("../service/resume.service");
 var ResumeComponent = (function () {
     function ResumeComponent(_resumeService) {
         this._resumeService = _resumeService;
-        this.title = "Resume";
     }
+    ResumeComponent.prototype.getResume = function () {
+        this.data = this._resumeService.getResume();
+    };
+    ResumeComponent.prototype.ngOnInit = function () {
+        this.getResume();
+    };
     return ResumeComponent;
 }());
 ResumeComponent = __decorate([

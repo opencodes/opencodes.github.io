@@ -23,14 +23,8 @@ var AppComponent = (function () {
         var _this = this;
         this._pageService.getTopNav().then(function (nav) { return _this.topnav = nav; });
     };
-    AppComponent.prototype.getProfile = function () {
-        var _this = this;
-        this._profileService.getProfile().then(function (profile) { return _this.profiledetails = profile; });
-    };
     AppComponent.prototype.ngOnInit = function () {
         this.getNavigations();
-        this.getProfile();
-        console.log(this.topnav, this.profiledetails);
     };
     return AppComponent;
 }());

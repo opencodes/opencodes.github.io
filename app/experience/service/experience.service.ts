@@ -4,7 +4,7 @@ import { EXPERIENCE } from './experience.moc.data';
 
 @Injectable()
 export class ExperienceService{
-    getExperience() : Experience[]{
+    getExperience() : Experience{
         return EXPERIENCE;
 
     }

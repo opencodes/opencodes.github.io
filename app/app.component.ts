@@ -17,23 +17,14 @@ export class AppComponent implements OnInit {
   title = 'Tour of Heroes';
   topnav: Nav[];
   name = 'Rajesh'; 
-  profiledetails : Profile[];
 
   constructor(private _pageService: PageService, private _profileService :ProfileService) { }
-
+  
   getNavigations(): void {
     this._pageService.getTopNav().then(nav => this.topnav = nav);
   }
-
-  getProfile() : void{
-    this._profileService.getProfile().then(profile => this.profiledetails = profile);
-  }
-
+  
   ngOnInit(): void {
     this.getNavigations();
-    this.getProfile();
-    console.log(this.topnav, this.profiledetails);
-  }
-
-  
+  }  
 }

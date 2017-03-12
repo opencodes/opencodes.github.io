@@ -16,6 +16,12 @@ var SkillsComponent = (function () {
         this._skillsService = _skillsService;
         this.title = "Skills";
     }
+    SkillsComponent.prototype.getSkills = function () {
+        this.data = this._skillsService.getSkill();
+    };
+    SkillsComponent.prototype.ngOnInit = function () {
+        this.getSkills();
+    };
     return SkillsComponent;
 }());
 SkillsComponent = __decorate([

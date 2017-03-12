@@ -1,17 +1,13 @@
-<section class="skills">
-    <div class="content">
-        <div class="col-6">
-            <img src="assets/images/logo/logo.jpg" width="200" />
-            <h2>{{profile.fullname}}</h2>
-            <p><i class="fa fa-envelope" aria-hidden="true"></i> {{profile.email}}</p>
-            <p><i class="fa fa-phone" aria-hidden="true"></i> {{profile.phone}}</p>
-        </div>
-        <div class="col-6">
-            <div class="row">
-                <article class="col-6">
-
-                </article>
-            </div>
-        </div>
-    </div>
+<section >
+	<div class="content" >
+		<div class="row " *ngFor="let company of data.companies">
+			<h2>{{company.name}} :- </h2>
+			<hr/>
+			<div class="col-3 portfolio-items" *ngFor="let project  of company.projects">
+				<a href="{{project.url}}">
+				<img src="{{project.image}}" title="{{project.title}}" class="responsive-image">
+				</a>
+			</div>
+		</div>
+	</div>	
 </section>

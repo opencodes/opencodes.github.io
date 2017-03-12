@@ -15,8 +15,25 @@ var ProfileComponent = (function () {
     function ProfileComponent(_profileService) {
         this._profileService = _profileService;
         this.profile = "";
+        this.profiledetails = {
+            name: "",
+            email: "",
+            phone: "",
+            social: ""
+        };
         this.title = "Profile";
     }
+    ProfileComponent.prototype.getProfile = function () {
+        var _this = this;
+        this._profileService.getProfile().then(function (profile) {
+            _this.profiledetails.name = profile.name.firstname + " " + profile.name.middlename + " " + profile.name.lastname;
+            _this.profiledetails.phone = profile.phone;
+            _this.profiledetails.email = profile.email;
+        });
+    };
+    ProfileComponent.prototype.ngOnInit = function () {
+        this.getProfile();
+    };
     return ProfileComponent;
 }());
 ProfileComponent = __decorate([

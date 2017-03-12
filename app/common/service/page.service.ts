@@ -4,11 +4,9 @@ import {Nav} from './nav';
 import {NAV} from './nav.mock.data';
 
 @Injectable()
-export class PageService{
-  
-    getTopNav(): Promise<Nav[]> {
+export class PageService{  
+    getTopNav() {
         return Promise.resolve(NAV);
-    }
-        
+    }        
 }
 

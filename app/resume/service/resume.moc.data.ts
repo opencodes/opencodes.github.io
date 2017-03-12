@@ -1,7 +1,8 @@
-import {Resume} from './resume';
+import { Resume } from './resume';
 
-export const RESUME : Resume[] = [{
-     "title":"Education",
-     "content":"I have experties on various web technologies.",
-     
-  }]
+export const RESUME: Resume = {
+  "title": "Resume",
+  "href": "resume",
+  "content": "Download updated resume.",
+  "link": "./assets/resume/RESUME_Rajesh_Kumar_Jha_UI_Developer.docx"
+}

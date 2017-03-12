@@ -1,9 +1,12 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PROJECT = [{
-        "title": "Projects",
-        "content": "I have experties on various web technologies.",
-        "projects": { "sapient": [{
+exports.PROJECT = {
+    "title": "Projects",
+    "content": "I have experties on various web technologies.",
+    "companies": [
+        {
+            "name": "sapient",
+            "projects": [{
                     "image": "assets/images/portfolio/kuoni_logo.png",
                     "title": "Title",
                     "url": "./",
@@ -38,14 +41,19 @@ exports.PROJECT = [{
                     "title": "Title",
                     "url": "./",
                     "description": "Description"
-                }],
-            "urbantouch": [{
+                }]
+        },
+        {
+            "name": "urbantouch",
+            "projects": [{
                     "image": "assets/images/portfolio/urbantouch_logo.png",
                     "title": "Title",
                     "url": "./",
                     "description": "Description"
-                }],
-            "componence": [{
+                }]
+        }, {
+            "name": "componence",
+            "projects": [{
                     "image": "assets/images/portfolio/papergoods_logo.png",
                     "title": "Title",
                     "url": "./",
@@ -60,6 +68,8 @@ exports.PROJECT = [{
                     "title": "Title",
                     "url": "./",
                     "description": "Description"
-                }] }
-    }];
+                }]
+        }
+    ]
+};
 //# sourceMappingURL=project.moc.data.js.map

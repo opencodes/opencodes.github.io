@@ -11,7 +11,7 @@ var skill_moc_data_1 = require("./skill.moc.data");
 var SkillsService = (function () {
     function SkillsService() {
     }
-    SkillsService.prototype.getSkills = function () {
+    SkillsService.prototype.getSkill = function () {
         return skill_moc_data_1.SKILL;
     };
     return SkillsService;

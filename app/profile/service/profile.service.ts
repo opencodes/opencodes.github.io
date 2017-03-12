@@ -4,7 +4,7 @@ import {PROFILE} from './mock-profile';
 
 @Injectable()
 export class ProfileService{
-    getProfile():Promise<Profile[]>{
+    getProfile(){
         return Promise.resolve(PROFILE);
 
     }

@@ -1,6 +1,6 @@
 import {Education} from './education';
 
-export const EDUCATION : Education[] = [{
+export const EDUCATION : Education = {
      "title":"Education",
      "content":"I have experties on various web technologies.",
      "education" : [{
@@ -25,4 +25,4 @@ export const EDUCATION : Education[] = [{
         "location" : "Bihar/India",
         "content":"Download updated resume."
         }]
-  }]
+  }

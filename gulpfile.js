@@ -1,12 +1,9 @@
 var gulp = require('gulp'),
 	notify = require("gulp-notify"),
-	uglify = require('gulp-uglifyjs'),
 	sass = require('gulp-ruby-sass');
 
 var config = {
     sassPath: './assets/sass',
-    bowerDir: './bower_components',
-	jsPath : './assets/js'
 }
 
 // Rerun the task when a file changes
@@ -26,17 +23,7 @@ gulp.task('css', function() {
 		})))
         .pipe(gulp.dest('./assets/css'));
 });
-gulp.task('js', function() {
-  gulp.src([config.jsPath+'/**/*.js'])
-    .pipe(uglify('app.min.js', {
-      mangle: false,
-	  outSourceMap: true,
-      output: {
-        beautify: true
-      }
-    }))
-    .pipe(gulp.dest('./assets/js'));
-});
-gulp.task('default', ['sass', 'watch', 'js']);
+
+gulp.task('default', ['css', 'watch']);
 
 
