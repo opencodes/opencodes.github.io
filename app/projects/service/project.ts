@@ -2,7 +2,7 @@ export interface Project {
     image: string;
     title: string;
     url: string;
-    description: string;
+    description: string[];
 }
 export interface Company {
     name: string;
