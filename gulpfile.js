@@ -13,7 +13,7 @@ gulp.task('watch', function() {
 gulp.task('css', function() {
     return gulp.src(config.sassPath + '/style.scss')
         .pipe(sass({
-            style: 'compressed',
+            //style: 'compressed',
             loadPath: [
                 './assets/sass',
             ]
