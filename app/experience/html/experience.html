@@ -1,28 +1,36 @@
-<section class="skills">
+<section class="experience">
     <div class="content">
-        <div class="col-6">
-            <h2 class="">{{data.title}}</h2>
-            <p>{{data.content}}</p>
-        </div>
-        <div class="col-6 experience-col">
-            <article *ngFor="let item of data.experience" class="experience">
-                <h3>{{item.position}}</h3>
-                <div class="row">
-                    <div class="col-6">
-                        <img src="{{item.logo}}" class="company-logo" />
-                    </div>
-                    <div class="col-6">
-                        <p><span>{{item.company}} - {{item.from}} / {{item.to}}</span></p>
-                        <span class="labels">{{item.period}}</span>
-                    </div>
 
-
-                    <p>{{item.role}}</p>
-                    <hr/>
-                </div>
+        <div class="col-12 timelines">
+            <div class="timeline">
+                <article *ngFor="let item of data.experience; let last = last" class=" ">
                     
-            </article>
+                    <div class="box">
+                        <h3>{{item.position}}</h3>
+                        <div class="row">
+                            <div class="col-3">
+                                <img src="{{item.logo}}" class="company-logo" />
+                            </div>
+                            <div class="col-9">
+                                <p><span>{{item.company}} - {{item.from}} / {{item.to}}</span></p>
+                                <span class="labels">{{item.period}}</span>
+                            </div>
+
+
+                            <p>{{item.role}}</p>
+                        </div>
+                    </div>
+                    <div class="time-label" >
+                        <i class="fa fa-share" aria-hidden="true"></i>
+                        <span class="labels">
+                          {{item.from}}
+                        </span>
+                    </div>
+                    
+
+                </article>
             </div>
         </div>
+    </div>
 
 </section>
