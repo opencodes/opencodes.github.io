@@ -26,6 +26,7 @@ export class ProfileComponent{
                 this.profiledetails.name = profile.name.firstname +" "+ profile.name.middlename +" "+ profile.name.lastname;
                 this.profiledetails.phone = profile.phone;
                 this.profiledetails.email = profile.email;
+                this.profiledetails.coverletter = profile.coverletter;
         });
     }
 
