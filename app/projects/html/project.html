@@ -2,11 +2,28 @@
 	<div class="content" >
 		<div class="row " *ngFor="let company of data.companies">
 			<h2>{{company.name}} :- </h2>
-			<hr/>
-			<div class="col-3 portfolio-items" *ngFor="let project  of company.projects">
+			<div class="box" *ngFor="let project  of company.projects">
+          <div class="project-details">
+            <h3> {{project.title}} <img src="{{project.image}}" width="100"  title="{{project.title}}" class="responsive-image pull-right"></h3>
+            <div class="row">
+                <div class="col-6">
+                    <p><strong>Role:</strong> {{project.title}}</p>
+                    
+                    
+                </div>  
+                <div class="col-6">
+                    <p><strong>Client:</strong> </p>
+                </div>
+                <div class="col-12">
+                    <p *ngFor="let description  of project.description">{{description}}</p>
+                </div>
+            </div>
+          </div>
+<!--
 				<a href="{{project.url}}">
-				<img src="{{project.image}}" title="{{project.title}}" class="responsive-image">
+				
 				</a>
+-->
 			</div>
 		</div>
 	</div>	
