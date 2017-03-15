@@ -1,4 +1,4 @@
-import {Aboutme} from './profile';
+import {Aboutme} from './aboutme';
 
 export const ABOUTME  = {"name":{
          "firstname":"Rajesh",
