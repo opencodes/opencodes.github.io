@@ -3,4 +3,6 @@ export interface Profile{
     email : string;
     phone : string;
     social: any;
+    coverletter:string;
+    image: string;
 }
