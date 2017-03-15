@@ -1,0 +1,20 @@
+<section class="profile">
+    <div class="content">
+        <div class="col-3">
+            <div class="box profile-info">
+                <img [src]="profiledetails.image" width="200" />
+                <h2>{{profiledetails.name}}</h2>
+                <p><i class="fa fa-envelope" aria-hidden="true"></i> {{profiledetails.email}}</p>
+                <p><i class="fa fa-phone" aria-hidden="true"></i> {{profiledetails.phone}}</p>
+            </div>
+        </div>
+        <div class="col-9">
+                <article >
+                    <div class="box">
+                        <h2>Cover Letter</h2>
+                        <p>{{profiledetails.coverletter}}</p>
+                    </div>
+                </article>
+        </div>
+    </div>
+</section>
