@@ -7,6 +7,10 @@ import { AppComponent }  from './app.component';
 import { RoutingConfig }  from './routing.config';
 
 //Common
+import { AboutmeComponent }  from './aboutme/components/aboutme.component';
+import { AboutmeService} from './aboutme/service/aboutme.service';
+
+//Common
 import { PageNotFoundComponent }  from './common/components/page.not.found.component';
 import { PageService} from './common/service/page.service';
 
@@ -43,6 +47,7 @@ import { SkillsService} from './skills/service/skills.service';
     
   declarations: [ 
       AppComponent,
+      AboutmeComponent,
       EducationComponent, 
       ExperienceComponent, 
       FunComponent, 
@@ -55,6 +60,7 @@ import { SkillsService} from './skills/service/skills.service';
   bootstrap:    [ AppComponent ],
     
   providers:    [ 
+      AboutmeService,
       PageService, 
       EducationService, 
       ExperienceService, 
