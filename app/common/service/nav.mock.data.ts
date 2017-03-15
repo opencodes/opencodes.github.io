@@ -3,7 +3,7 @@ import {Nav} from './nav';
 export const NAV : Nav[] = [
         {
             "title": "About Me",
-            "href": "",
+            "href": "aboutme",
         }, {
             "title": "Skills",
             "href": "skills",
