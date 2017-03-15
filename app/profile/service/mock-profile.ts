@@ -7,6 +7,7 @@ export const PROFILE  = {"name":{
       },
       "email":"rkjha.it.in@gmail.com",
       "phone":"7022368966",
+      "image": "assets/images/profile.jpg";                   
       "coverletter":"Since 6+ year accomplished web design & front-end development with extensive experience building E-Commerce driven websites using open source and enterprise technologies, HTML5, CSS3 and various web scripting technologies, web standards and project management. Provide a diverse range of services including custom theme/application/plugin development and branding to an array of clients from a variety of industries. Enthusiastic web professional motivated by challenging projects and deadlines.",
       "social" : [{
             "title" : "facebook",
