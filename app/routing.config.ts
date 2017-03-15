@@ -1,6 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 
 import { AppComponent }  from './app.component';
+import { AboutmeComponent }  from './aboutme/components/profile.component';
 import { ProfileComponent }  from './profile/components/profile.component';
 import { PageNotFoundComponent }  from './common/components/page.not.found.component';
 import { EducationComponent }  from './education/components/education.component';
@@ -12,6 +13,7 @@ import { SkillsComponent }  from './skills/components/skills.component';
 
 const RoutingConfig: Routes = [
   { path: '', component: ProfileComponent },
+  { path: 'aboutme', component: AboutmeComponent },
   { path: 'education', component: EducationComponent },
   { path: 'experience', component: ExperienceComponent },
   { path: 'fun', component: FunComponent },
