@@ -13,7 +13,9 @@ export class ProfileComponent{
         name : "",
         email : "",
         phone : "",
-        social : ""
+        social : "",
+        coverletter:"",
+        image :""
     };
 
     constructor(private _profileService:ProfileService){
@@ -26,6 +28,7 @@ export class ProfileComponent{
                 this.profiledetails.name = profile.name.firstname +" "+ profile.name.middlename +" "+ profile.name.lastname;
                 this.profiledetails.phone = profile.phone;
                 this.profiledetails.email = profile.email;
+                this.profiledetails.image = profile.image;
                 this.profiledetails.coverletter = profile.coverletter;
         });
     }
