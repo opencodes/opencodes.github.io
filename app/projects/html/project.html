@@ -6,24 +6,78 @@
           <div class="project-details">
             <h3> {{project.title}} <img src="{{project.image}}" width="100"  title="{{project.title}}" class="responsive-image pull-right"></h3>
             <div class="row">
-                <div class="col-6">
-                    <p><strong>Role:</strong> {{project.title}}</p>
-                    
-                    
-                </div>  
-                <div class="col-6">
-                    <p><strong>Client:</strong> </p>
-                </div>
                 <div class="col-12">
                     <p *ngFor="let description  of project.description">{{description}}</p>
                 </div>
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>Role:</strong> 
+                    </div>
+                    <div class="col-9">
+                        {{project.role}}
+                    </div>
+                </div>  
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>Duration:</strong> 
+                    </div>
+                    <div class="col-9">
+                        {{project.duration}}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>Location:</strong> 
+                    </div>
+                    <div class="col-9">
+                        {{project.location}}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>Client:</strong> 
+                    </div>
+                    <div class="col-9">
+                        {{project.client}}
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>Technology:</strong> 
+                    </div>
+                    <div class="col-9">
+                        <span  class="labels" *ngFor="let technology  of project.technology">{{technology}}</span>
+                        
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="col-3">
+                        <strong>URL:</strong> 
+                    </div>
+                    <div class="col-9">
+                        {{project.url}}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-1">
+                        <strong>Achievement:</strong> 
+                    </div>
+                    <div class="col-11">
+                        {{project.achivement}}
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="col-1">
+                        <strong>Responsibility:</strong> 
+                    </div>
+                    <div class="col-11">
+                        {{project.responsibility}}
+                    </div>
+                </div>
+               
             </div>
           </div>
-<!--
-				<a href="{{project.url}}">
-				
-				</a>
--->
+
 			</div>
 		</div>
 	</div>	
