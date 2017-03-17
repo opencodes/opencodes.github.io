@@ -1,6 +1,8 @@
-import {Component, OnInit} from '@angular/core';
+import {Component} from '@angular/core';
 
+import {FormClass} from '../service/form.class';
 import {AboutmeService} from '../service/aboutme.service';
+import {Post} from '../service/post';
 
 @Component({
     templateUrl : "./app/aboutme/html/aboutme.html",
@@ -8,33 +10,29 @@ import {AboutmeService} from '../service/aboutme.service';
 })
 
 export class AboutmeComponent{
-    profile="";
-    profiledetails = {
-        name : "",
-        email : "",
-        phone : "",
-        social : "",
-        coverletter:"",
-        image :""
-    };
-
-    constructor(private _profileService:AboutmeService){
-        
+    errorMessage: string;
+    posts: Post[];
+    constructor(private _service:AboutmeService){
     }
-    title = "Profile";
+    
+    powers = ['Really Smart', 'Super Flexible',
+            'Super Hot', 'Weather Changer'];
 
-    getProfile() : void{
-        this._profileService.getProfile().then(profile => {
-                this.profiledetails.name = profile.name.firstname +" "+ profile.name.middlename +" "+ profile.name.lastname;
-                this.profiledetails.phone = profile.phone;
-                this.profiledetails.email = profile.email;
-                this.profiledetails.image = profile.image;
-                this.profiledetails.coverletter = profile.coverletter;
-        });
-    }
+    model = new FormClass(18, 'Dr IQ', this.powers[0], 'Chuck Overstreet');
 
+    
+    submitted = false;
+
+    onSubmit() { this.submitted = true; }
+
+    // TODO: Remove this when we're done
+    get diagnostic() { return JSON.stringify(this.model); }
+    
     ngOnInit(){
-        this.getProfile();
+        this._service.getPosts().then(
+                     post => this.posts = post,
+                     error =>  this.errorMessage = <any>error);
     }
+    
 }
 
