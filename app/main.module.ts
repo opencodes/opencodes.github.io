@@ -1,6 +1,7 @@
 import { NgModule }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { HttpModule } from '@angular/http';
 
 
 import { AppComponent }  from './app.component';
@@ -43,7 +44,7 @@ import { SkillsComponent }  from './skills/components/skills.component';
 import { SkillsService} from './skills/service/skills.service';
 
 @NgModule({
-  imports:      [ BrowserModule, RouterModule.forRoot(RoutingConfig) ],
+  imports:      [ BrowserModule, HttpModule, RouterModule.forRoot(RoutingConfig) ],
     
   declarations: [ 
       AppComponent,
