@@ -1,7 +1,9 @@
-import { NgModule }      from '@angular/core';
+import { NgModule , NO_ERRORS_SCHEMA }      from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule, Routes } from '@angular/router';
+import { FormsModule }   from '@angular/forms';
 import { HttpModule } from '@angular/http';
+
 
 
 import { AppComponent }  from './app.component';
@@ -10,6 +12,8 @@ import { RoutingConfig }  from './routing.config';
 //Common
 import { AboutmeComponent }  from './aboutme/components/aboutme.component';
 import { AboutmeService} from './aboutme/service/aboutme.service';
+//Widget
+import {Box} from './widgets/box.component';
 
 //Common
 import { PageNotFoundComponent }  from './common/components/page.not.found.component';
@@ -44,11 +48,15 @@ import { SkillsComponent }  from './skills/components/skills.component';
 import { SkillsService} from './skills/service/skills.service';
 
 @NgModule({
-  imports:      [ BrowserModule, HttpModule, RouterModule.forRoot(RoutingConfig) ],
+  imports:      [ BrowserModule, 
+      HttpModule,
+      FormsModule, 
+      RouterModule.forRoot(RoutingConfig) ],
     
   declarations: [ 
       AppComponent,
       AboutmeComponent,
+      Box,
       EducationComponent, 
       ExperienceComponent, 
       FunComponent, 
@@ -70,6 +78,7 @@ import { SkillsService} from './skills/service/skills.service';
       ProjectService,
       ResumeService,
       SkillsService
-  ]
+  ],
+  schemas:      [ NO_ERRORS_SCHEMA ] // add this line
 })
 export class AppModule { }
