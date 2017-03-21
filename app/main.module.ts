@@ -79,6 +79,6 @@ import { SkillsService} from './skills/service/skills.service';
       ResumeService,
       SkillsService
   ],
-  schemas:      [ NO_ERRORS_SCHEMA ] // add this line
+  schemas:      [ NO_ERRORS_SCHEMA ] // Angular 2 does not recognize the card-body tag. card-body is neither a directive nor a component. A quick way to get around this error is to add schema metadata property in your module, set value to NO_ERRORS_SCHEMA in your module file.
 })
 export class AppModule { }
