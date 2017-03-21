@@ -1,19 +1,37 @@
 <section class="profile">
     <div class="content">
         <div class="col-3">
-            <div class="box profile-info">
-                <img [src]="profiledetails.image" width="200" />
-                <h2>{{profiledetails.name}}</h2>
-                <p><i class="fa fa-envelope" aria-hidden="true"></i> {{profiledetails.email}}</p>
-                <p><i class="fa fa-phone" aria-hidden="true"></i> {{profiledetails.phone}}</p>
-            </div>
+            <box >
+                <!-- body -->
+                <box-body>
+                    <div class="profile-info">
+                        <img [src]="profiledetails.image" width="200" />
+                        <h2>{{profiledetails.name}}</h2>
+                        <p><i class="fa fa-envelope" aria-hidden="true"></i> {{profiledetails.email}}</p>
+                        <p><i class="fa fa-phone" aria-hidden="true"></i> {{profiledetails.phone}}</p>
+                    </div>
+                </box-body>
+            </box>
         </div>
         <div class="col-9">
                 <article >
-                    <div class="box">
-                        <h2>Cover Letter</h2>
-                        <p>{{profiledetails.coverletter}}</p>
-                    </div>
+                   
+                    <box>
+                        <!-- header -->
+                        <box-header>
+                            <h2>Cover Letter</h2>
+                        </box-header>
+
+                        <!-- body -->
+                        <box-body>
+                            <p>{{profiledetails.coverletter}}</p>
+                        </box-body>
+
+                        <!-- footer -->
+                        <box-footer>
+                           
+                        </box-footer>
+                    </box>
                 </article>
         </div>
     </div>
