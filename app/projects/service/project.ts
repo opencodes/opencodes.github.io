@@ -1,7 +1,14 @@
 export interface Project {
     image: string;
-    title: string;
+    title: string;    
+    role: string;
     url: string;
+    responsibility: string;
+    client: string;
+    duration: string;
+    location: string;
+    technology : string[];
+    achivement: string;
     description: string[];
 }
 export interface Company {
@@ -11,13 +18,5 @@ export interface Company {
 export interface ProjectDetails {
     title: string;
     content: string;
-    companies: Company[];
-    role: string;
-    url: string;
-    responsibility: string;
-    client: string;
-    duration: string;
-    location: string;
-    technology: string[];
-    achivement: string;
+    companies : Company[]
 }

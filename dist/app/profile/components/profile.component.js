@@ -19,7 +19,9 @@ var ProfileComponent = (function () {
             name: "",
             email: "",
             phone: "",
-            social: ""
+            social: "",
+            coverletter: "",
+            image: ""
         };
         this.title = "Profile";
     }
@@ -29,6 +31,8 @@ var ProfileComponent = (function () {
             _this.profiledetails.name = profile.name.firstname + " " + profile.name.middlename + " " + profile.name.lastname;
             _this.profiledetails.phone = profile.phone;
             _this.profiledetails.email = profile.email;
+            _this.profiledetails.image = profile.image;
+            _this.profiledetails.coverletter = profile.coverletter;
         });
     };
     ProfileComponent.prototype.ngOnInit = function () {

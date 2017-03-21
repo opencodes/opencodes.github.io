@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+var aboutme_component_1 = require("./aboutme/components/aboutme.component");
 var profile_component_1 = require("./profile/components/profile.component");
 var page_not_found_component_1 = require("./common/components/page.not.found.component");
 var education_component_1 = require("./education/components/education.component");
@@ -10,6 +11,7 @@ var resume_component_1 = require("./resume/components/resume.component");
 var skills_component_1 = require("./skills/components/skills.component");
 var RoutingConfig = [
     { path: '', component: profile_component_1.ProfileComponent },
+    { path: 'aboutme', component: aboutme_component_1.AboutmeComponent },
     { path: 'education', component: education_component_1.EducationComponent },
     { path: 'experience', component: experience_component_1.ExperienceComponent },
     { path: 'fun', component: fun_component_1.FunComponent },

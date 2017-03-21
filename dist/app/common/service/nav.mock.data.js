@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.NAV = [
     {
         "title": "About Me",
-        "href": "",
+        "href": "aboutme",
     }, {
         "title": "Skills",
         "href": "skills",

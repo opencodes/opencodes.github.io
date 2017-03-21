@@ -9,8 +9,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 var core_1 = require("@angular/core");
 var platform_browser_1 = require("@angular/platform-browser");
 var router_1 = require("@angular/router");
+var forms_1 = require("@angular/forms");
+var http_1 = require("@angular/http");
 var app_component_1 = require("./app.component");
 var routing_config_1 = require("./routing.config");
+//Common
+var aboutme_component_1 = require("./aboutme/components/aboutme.component");
+var aboutme_service_1 = require("./aboutme/service/aboutme.service");
+//Widget
+var box_components_1 = require("./widgets/box.components");
 //Common
 var page_not_found_component_1 = require("./common/components/page.not.found.component");
 var page_service_1 = require("./common/service/page.service");
@@ -42,9 +49,14 @@ var AppModule = (function () {
 }());
 AppModule = __decorate([
     core_1.NgModule({
-        imports: [platform_browser_1.BrowserModule, router_1.RouterModule.forRoot(routing_config_1.RoutingConfig)],
+        imports: [platform_browser_1.BrowserModule,
+            http_1.HttpModule,
+            forms_1.FormsModule,
+            router_1.RouterModule.forRoot(routing_config_1.RoutingConfig)],
         declarations: [
             app_component_1.AppComponent,
+            aboutme_component_1.AboutmeComponent,
+            box_components_1.Box,
             education_component_1.EducationComponent,
             experience_component_1.ExperienceComponent,
             fun_component_1.FunComponent,
@@ -56,6 +68,7 @@ AppModule = __decorate([
         ],
         bootstrap: [app_component_1.AppComponent],
         providers: [
+            aboutme_service_1.AboutmeService,
             page_service_1.PageService,
             education_service_1.EducationService,
             experience_service_1.ExperienceService,
@@ -64,7 +77,8 @@ AppModule = __decorate([
             project_service_1.ProjectService,
             resume_service_1.ResumeService,
             skills_service_1.SkillsService
-        ]
+        ],
+        schemas: [core_1.NO_ERRORS_SCHEMA] // Angular 2 does not recognize the card-body tag. card-body is neither a directive nor a component. A quick way to get around this error is to add schema metadata property in your module, set value to NO_ERRORS_SCHEMA in your module file.
     })
 ], AppModule);
 exports.AppModule = AppModule;

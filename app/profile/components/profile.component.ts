@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 import {ProfileService} from '../service/profile.service';
-import {Box} from '../../widgets/box.component';
+import {Box} from '../../widgets/box.components';
 
 @Component({
     templateUrl : "./app/profile/html/profile.html",

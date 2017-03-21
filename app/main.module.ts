@@ -13,7 +13,7 @@ import { RoutingConfig }  from './routing.config';
 import { AboutmeComponent }  from './aboutme/components/aboutme.component';
 import { AboutmeService} from './aboutme/service/aboutme.service';
 //Widget
-import {Box} from './widgets/box.component';
+import {Box} from './widgets/box.components';
 
 //Common
 import { PageNotFoundComponent }  from './common/components/page.not.found.component';

@@ -1,6 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.PROFILE = { "name": {
+exports.ABOUTME = { "name": {
         "firstname": "Rajesh",
         "middlename": "Kumar",
         "lastname": "Jha"
@@ -27,4 +27,4 @@ exports.PROFILE = { "name": {
         }
     ]
 };
-//# sourceMappingURL=mock-profile.js.map
+//# sourceMappingURL=mock-aboutme.js.map
