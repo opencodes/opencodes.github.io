@@ -1,3 +1,22 @@
+
+Sanket Barve
+sanket_barve@persistent.com
+5-Primal Projects Pvt. Ltd. SEZ 5A WS237 -
++91-8061359257/9860996538
+
+Abhijeet Ghodke	
+Aryabhata Ar 4 C17 3
+c-abhijeet_ghodke@persistent.com
++91-20-67035019
+Extn:35019
+Mob : 
+
+Santosh Junnarkar
+santosh_junnarkar@persistent.co.in
+
+Jeevan Sunkersett
+cell - 98509-58595
+jeevan_sunkersett@persistent.com
 ## Angular Documentation QuickStart Changelog
 Upgraders: for a fresh start, consider running these commands 
 * `git clean -xdf` 
